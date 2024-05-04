@@ -15,6 +15,14 @@ class Stack:
 
 
 class TaskManager:
+    """Класс Менеджер задач (базовый)
+    args:
+        task - (dict) словарь задач.
+        
+    methods:
+        __str__  - Возвращает объекты словаря, сортируя их по приоритету.
+        new_task - Добавляет планируемые цели в словарь задач\n"""
+    
     def __init__(self):
         self.task = dict()
 
@@ -39,4 +47,4 @@ manager.new_task("отдохнуть", 1)
 manager.new_task("поесть", 2)
 manager.new_task("сдать дз", 2)
 print(manager)
-
+print(TaskManager.__doc__)
